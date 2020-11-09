@@ -9,8 +9,8 @@ Traceback (most recent call last):
   File "test_exercice.py", line 15, in test_linear_values
     output = list(exercice.linear_values())
   File "/home/runner/work/c04-ch10-exercices-Clarens-M/c04-ch10-exercices-Clarens-M/exercice.py", line 11, in linear_values
-    a = np.arran
-AttributeError: module 'numpy' has no attribute 'arran'
+    return a
+NameError: name 'a' is not defined
 
 ======================================================================
 FAIL: test_closest (__main__.TestExercice)
@@ -40,6 +40,6 @@ Mauvaise réponse
        [ 2.236068, -0.463648]])
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.002s
+Ran 3 tests in 0.001s
 
 FAILED (failures=2, errors=1)
