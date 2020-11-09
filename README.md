@@ -2,13 +2,14 @@
 
 
 
+
 ## Résultats
 Score | Critères
 --- | ---
 0/1 | Index
 0/1 | Coordonnées
-0/1 | 64 valeurs
-0/3 | **Total**
+1/1 | 64 valeurs
+1/3 | **Total**
 
 [Voir détails](./logs/tests_results.txt) | [Rafraîchir](../../)
 # Exercices en vrac (chapitre 10)

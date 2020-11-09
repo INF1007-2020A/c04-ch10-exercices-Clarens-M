@@ -1,16 +1,6 @@
 test_closest (__main__.TestExercice) ... FAIL
 test_coordinates (__main__.TestExercice) ... FAIL
-test_linear_values (__main__.TestExercice) ... ERROR
-
-======================================================================
-ERROR: test_linear_values (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 15, in test_linear_values
-    output = list(exercice.linear_values())
-  File "/home/runner/work/c04-ch10-exercices-Clarens-M/c04-ch10-exercices-Clarens-M/exercice.py", line 11, in linear_values
-    return a
-NameError: name 'a' is not defined
+test_linear_values (__main__.TestExercice) ... ok
 
 ======================================================================
 FAIL: test_closest (__main__.TestExercice)
@@ -40,6 +30,6 @@ Mauvaise réponse
        [ 2.236068, -0.463648]])
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.001s
+Ran 3 tests in 0.002s
 
-FAILED (failures=2, errors=1)
+FAILED (failures=2)
