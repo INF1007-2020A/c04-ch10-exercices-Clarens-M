@@ -1,35 +1,20 @@
-test_closest (__main__.TestExercice) ... FAIL
-test_coordinates (__main__.TestExercice) ... FAIL
+test_closest (__main__.TestExercice) ... ok
+test_coordinates (__main__.TestExercice) ... ERROR
 test_linear_values (__main__.TestExercice) ... ok
 
 ======================================================================
-FAIL: test_closest (__main__.TestExercice)
+ERROR: test_coordinates (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 45, in test_closest
-    'Erreur dans le remplacement de caractère'
-AssertionError: 0 != 3 : Erreur dans le remplacement de caractère
-
-======================================================================
-FAIL: test_coordinates (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 32, in test_coordinates
-    'Mauvaise réponse'
-  File "/home/runner/.local/lib/python3.6/site-packages/numpy/testing/_private/utils.py", line 931, in assert_array_equal
-    verbose=verbose, header='Arrays are not equal')
-  File "/home/runner/.local/lib/python3.6/site-packages/numpy/testing/_private/utils.py", line 759, in assert_array_compare
-    raise AssertionError(msg)
-AssertionError: 
-Arrays are not equal
-Mauvaise réponse
-(shapes (0,), (3, 2) mismatch)
- x: array([], dtype=float64)
- y: array([[ 0.      ,  0.      ],
-       [14.142136,  0.785398],
-       [ 2.236068, -0.463648]])
+  File "test_exercice.py", line 26, in test_coordinates
+    output = exercice.coordinate_conversion(cartesian_coordinates)
+  File "/home/runner/work/c04-ch10-exercices-Clarens-M/c04-ch10-exercices-Clarens-M/exercice.py", line 13, in coordinate_conversion
+    return np.array([(np.sqrt(co[0]**2 + co[1]**2), np.arctan(co[1], co[0])) for co in cartesian_coordinates])
+  File "/home/runner/work/c04-ch10-exercices-Clarens-M/c04-ch10-exercices-Clarens-M/exercice.py", line 13, in <listcomp>
+    return np.array([(np.sqrt(co[0]**2 + co[1]**2), np.arctan(co[1], co[0])) for co in cartesian_coordinates])
+TypeError: return arrays must be of ArrayType
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.002s
+Ran 3 tests in 0.001s
 
-FAILED (failures=2)
+FAILED (errors=1)
